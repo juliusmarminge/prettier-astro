@@ -8,5 +8,6 @@
     "astro.config.mjs",
     "prettier.config.cjs",
     "tailwind.config.cjs"
-  ]
+  ],
+  "exclude": ["node_modules"]
 }
