@@ -1,0 +1,12 @@
+{
+  "extends": "astro/tsconfigs/strictest",
+  "compilerOptions": {
+    "types": ["astro/client"]
+  },
+  "include": [
+    "src",
+    "astro.config.mjs",
+    "prettier.config.cjs",
+    "tailwind.config.cjs"
+  ]
+}
