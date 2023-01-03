@@ -1,4 +1,5 @@
 ---
+import cn from "clsx";
 ---
 
 <html lang="en">
@@ -10,7 +11,11 @@
     <title>Astro</title>
   </head>
   <body>
-    <h1 class="flex h-4 w-4 flex-col font-bold text-white">Astro</h1>
-    <div class="p-4 pt-2"></div>
+    <!-- changing order, then saving file will re-sort the classes -->
+    <h1 class="h-4 w-4 font-bold">Astro</h1>
+
+    <!-- clsx/cn expressions still not supported, only the bottom `p` will get sorted -->
+    <p class={cn("flex-col flex")}></p>
+    <p class="flex flex-col"></p>
   </body>
 </html>
